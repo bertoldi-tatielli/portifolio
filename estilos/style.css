@@ -1,16 +1,6 @@
 @charset "UTF-8";
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
-
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -29,11 +19,11 @@
 
   /* detalhes */
   --borda: #e5e7eb;
-  --sombra: 0 4px 12px rgba(0,0,0,0.08);
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
 
 }
 
-body{
+body {
 
   font-family: "Segoe UI", Tahoma, sans-serif;
   line-height: 1.6;
@@ -80,23 +70,17 @@ nav#menu ul {
 }
 
 nav#menu a {
-
   text-decoration: none;
   color: var(--texto-inverso);
-
   font-weight: 600;
   font-size: 0.9rem;
-
   padding: 8px 12px;
-
   border-radius: 6px;
-
   transition: all .25s ease;
 
 }
 
 nav#menu a:hover {
-
   background: var(--cor-primaria);
   color: white;
 
@@ -120,6 +104,7 @@ section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: center 20%;
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
@@ -154,3 +139,83 @@ div#social a:hover {
   color: var(--cor-secundaria)
 }
 
+section#detalhes {
+  grid-column: 2;
+}
+
+
+#texto-digitando {
+  font-size: 1.3rem;
+  color: var(--cor-primaria);
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+article {
+  background: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#skills h2 {
+  margin-bottom: 15px;
+}
+gggggggggggggg
+jjjjjjjjjjjjjj
+
+
+#apresentacao h3 {
+  font-size: 1.4rem;
+  color: var(--cor-primaria);
+  margin-top: 10px;
+}
+
+.skill {
+  margin-top: 15px;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+}
+
+.barra {
+  width: 100%;
+  height: 10px;
+  background: var(--borda);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+  position: relative;
+}
+
+.progresso {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  width: 0;
+  transition: width 1s ease;
+}
+
+.barra::after {
+  content: attr(data-label);
+  position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: var(--texto);
+}
+
+
+.container-skill {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width:768px) {
+  .container-skill {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="icon" type="image/x-icon" href="imagens/logo.ico">
     <script src="https://kit.fontawesome.com/2bc5553ae0.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
         <nav id="menu">
@@ -16,7 +19,10 @@
                 <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-diagram-project"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li>
+                    <a href="#" id="botao-tema">
+                        <i class="fa-solid fa-moon"></i></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,23 +31,101 @@
             <img src="imagens/tatielli-perfil.jpg" alt="Tatielli Bertoldi" class="foto">
             <h1>Tatielli Bertoldi</h1>
             <p>Estudante de desenvolvimento web, atualmente finalizando uma formação completa na área.
-            Formada em Técnico Administrativo, estou em processo de transição para o setor de tecnologia, com interesse especial em criação de layouts e design de interfaces.
-            Tenho grande afinidade com a parte criativa do desenvolvimento web e busco constantemente evoluir minhas habilidades para criar experiências digitais modernas e funcionais.</p>
+                Formada em Técnico Administrativo, estou em processo de transição para o setor de tecnologia, com
+                interesse especial em criação de layouts e design de interfaces.
+                Tenho grande afinidade com a parte criativa do desenvolvimento web e busco constantemente evoluir minhas
+                habilidades para criar experiências digitais modernas e funcionais.</p>
             <div id="social">
-                <a href="https://www.linkedin.com/in/tatielli-bertoldi-a786b5291/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com//bertoldi-tatielli" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/tatielli.webdev/" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
-                
+                <a href="https://www.linkedin.com/in/tatielli-bertoldi-a786b5291/" target="_blank" rel="nofollow"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com//bertoldi-tatielli" target="_blank" rel="nofollow"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/tatielli.webdev/" target="_blank" rel="nofollow"><i
+                        class="fa-brands fa-instagram"></i></a>
+
             </div>
         </section>
         <section id="detalhes">
+            <article id="apresentacao">
+                <h2>Apresentação</h2>
+                <h3 id="texto-digitando"></h3>
+            </article><!-- Fim article#apresentacao -->
+            <article id="skills">
 
+                <h2><i class="fa-solid fa-brain"></i> Skills</h2>
+
+                <div class="container-skill">
+
+                    <div class="skill" data-nivel="90">
+                        <span class="nome"><i class="fa-solid fa-code"></i> HTML5</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="85">
+                        <span class="nome"><i class="fa-solid fa-paint-brush"></i> CSS3</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="15">
+                        <span class="nome"><i class="fa-solid fa-code"></i> JavaScript</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 15%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="90">
+                        <span class="nome"><i class="fa-solid fa-comment"></i> Comunicação</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="90">
+                        <span class="nome"><i class="fa-solid fa-users"></i> Trabalho em Equipe</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="85">
+                        <span class="nome"><i class="fa-solid fa-arrows-alt"></i> Flexibilidade</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-nivel="80">
+                        <span class="nome"><i class="fa-solid fa-crown"></i> Liderança</span>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </article><!-- Fim article#skills -->
+            <article id="formacao">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+
+            </article><!-- Fim article#formacao -->
+            <article id="projetos">
+                <h2><i class="fa-solid fa-diagram-project"></i> Projetos</h2>
+
+            </article><!-- Fim article#projetos -->
         </section>
     </main>
     <footer>
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
