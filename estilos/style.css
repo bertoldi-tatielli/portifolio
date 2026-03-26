@@ -264,6 +264,14 @@ article {
   transition: border-color 0.5s, border-width 0.5s;
 }
 
+
+#projeto-container .projeto p {
+  max-width: 500px;
+  line-height: 1.5;
+  flex-basis: 100%;
+}
+
+
 #projeto-container .projeto:hover {
   border-color: var(--cor-primaria);
   border-left-width: 15px;
@@ -280,30 +288,21 @@ article {
 
 footer {
   grid-column: 2;
-
   margin: 40px 0 30px 0; /* topo e base */
-
   padding: 15px;
-
   background: var(--fundo-card);
   color: var(--texto);
-
   border-radius: 15px;
-
-  width: 100%; /* 🔥 ocupa toda largura do conteúdo */
-
+  width: 100%; 
   text-align: center;
-
   box-shadow: var(--sombra);
 }
 
-/* texto */
 footer p {
   font-size: 0.9rem;
   opacity: 0.8;
 }
 
-/* destaque nome */
 footer strong {
   font-weight: 600;
 }
@@ -312,18 +311,41 @@ footer strong {
 
 
 @media screen and (min-width:768px) {
-  .container-skill {
+  
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  
+  section#ficha{
+    grid-template-columns: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhes{
+    grid-template-columns: 3/4;
+  }
+
+  #container-skill {
     grid-template-columns: 1fr 1fr;
   }
 
-  #projeto-container .projeto{
+  #projeto-container .projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-start; 
+    
   }
 
   #projeto-container .projeto-info {
-    max-width: 80%;
+    width: 45%;
+    max-width: 400px;
   }
+
+  #projeto-container .projeto > *:not(img) {
+  flex: 1;
+}
 
   #projeto-container .foto {
     aspect-ratio: 1/1;
